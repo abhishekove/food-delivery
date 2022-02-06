@@ -1,3 +1,5 @@
 {{page-title "HotelList"}}
-nhnn
+{{#each @model as |hotel|}}
+<Hotel @hotel={{hotel}} />
+{{/each}}
 {{outlet}}

@@ -10,4 +10,6 @@ Router.map(function () {
   this.route('signup', { path: '/' });
   this.route('hotel-list', { path: '/hotels' });
   this.route('signup');
+  this.route('hotel');
+  this.route('hotel', { path: '/hotel/:id' });
 });
