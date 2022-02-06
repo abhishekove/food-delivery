@@ -8,12 +8,11 @@ export default class SignupController extends Controller {
 
   @action
   submitDetails() {
-    console.log(this.userName.getFirstName);
-    if (this.userName.getFirstName === 'Food') {
+    if (this.userName.getFirstName === 'Food' || this.userName.getFirstName === '') {
       alert("Enter First Name");
       return;
     }
-    if (this.userName.getLastName === 'Delivery') {
+    if (this.userName.getLastName === 'Delivery' || this.userName.getLastName === '') {
       alert("Enter Last Name");
       return;
     }
