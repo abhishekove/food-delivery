@@ -1,5 +1,9 @@
 {{page-title "HotelList"}}
-{{#each @model as |hotel|}}
-<Hotel @hotel={{hotel}} />
-{{/each}}
+<Header />
+<div class="d-flex flex-column p-4">
+    {{#each @model as |hotel|}}
+    <Hotel @hotel={{hotel}} />
+    {{/each}}
+</div>
+
 {{outlet}}

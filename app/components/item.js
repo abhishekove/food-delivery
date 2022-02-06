@@ -16,7 +16,7 @@ export default class ItemComponent extends Component {
             id: id,
             type: 'order',
             attributes: {
-              restoName: this.args.name,
+              restoname: this.args.name,
               items: [this.args.item],
               cost: this.args.item.cost,
             },

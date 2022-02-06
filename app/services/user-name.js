@@ -2,8 +2,8 @@ import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 
 export default class UserNameService extends Service {
-  @tracked _firstName = '';
-  @tracked _lastName = '';
+  _firstName = 'Food';
+  _lastName = 'Delivery';
   set setFirstName(name) {
     this._firstName = name;
   }

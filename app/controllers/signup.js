@@ -4,6 +4,21 @@ import { inject as service } from '@ember/service';
 
 export default class SignupController extends Controller {
   @service userName;
+  @service router;
+
+  @action
+  submitDetails() {
+    console.log(this.userName.getFirstName);
+    if (this.userName.getFirstName === 'Food') {
+      alert("Enter First Name");
+      return;
+    }
+    if (this.userName.getLastName === 'Delivery') {
+      alert("Enter Last Name");
+      return;
+    }
+    this.router.transitionTo('hotel-list');
+  }
 
   @action
   setFirstName(name) {

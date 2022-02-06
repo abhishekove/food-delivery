@@ -1,7 +1,16 @@
 {{page-title "Signup"}}
-<input type="text" id="fname" name="fname" onchange={{this.setFirstName}} oninput={{this.setFirstName}}><br>
-<h4>{{this.getFirstName}}</h4>
-<input type="text" id="lname" name="lname" onchange={{this.setLastName}} oninput={{this.setLastName}}><br>
-<h4>{{this.getLastName}}</h4>
-<LinkTo @route="hotel-list">Submit</LinkTo>
+<Header />
+<form>
+    <div class="row m-3">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="First name" id="fname" name="fname"
+                onchange={{this.setFirstName}} oninput={{this.setFirstName}}>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Last name" id="lname" name="lname"
+                onchange={{this.setLastName}} oninput={{this.setLastName}}>
+        </div>
+    </div>
+    <div class="btn btn-primary m-3" {{on 'click' this.submitDetails}}>Submit</div>
+</form>
 {{outlet}}

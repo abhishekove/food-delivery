@@ -1,5 +1,9 @@
-<div>
-    {{#each @order.items as |item|}}
-    <Item @item={{item}} @id={{@model.id}} @name={{@model.name}} />
-    {{/each}}
+<div class="card m-3">
+    <div class="card-body">
+        <h5 class="card-title">{{@order.restoname}}</h5>
+        {{#each @order.items as |item|}}
+        <Item @item={{item}} @id={{@model.id}} @name={{@model.name}} />
+        {{/each}}
+        <p class="card-text">Total Cost: Rs {{@order.cost}}</p>
+    </div>
 </div>

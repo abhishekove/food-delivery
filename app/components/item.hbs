@@ -1,9 +1,11 @@
-<div>
-    {{@item.name}}
-    {{@item.cost}}
-    {{#if @add}}
-    <div {{on 'click' this.click}}>
-        add
+    <div class="card m-4">
+        <div class="card-body">
+            <h5 class="card-title">{{@item.name}}</h5>
+            <p class="card-text">{{@item.cost}}</p>
+            {{#if @add}}
+            <div class="btn btn-primary" {{on 'click' this.click}}>
+                add
+            </div>
+            {{/if}}
+        </div>
     </div>
-    {{/if}}
-</div>

@@ -1,6 +1,10 @@
 {{page-title "Hotel"}}
-{{#each @model.items as |item|}}
-<Item @item={{item}} @id={{@model.id}} @name={{@model.name}} @add=true />
-{{/each}}
-<LinkTo @route="cart">Submit</LinkTo>
+<Header />
+<div class="d-flex flex-column p-4">
+    {{#each @model.items as |item|}}
+    <Item @item={{item}} @id={{@model.id}} @name={{@model.name}} @add=true />
+    {{/each}}
+</div>
+
+<LinkTo class="btn btn-primary m-4 pr-4" @route="cart">Submit</LinkTo>
 {{outlet}}

@@ -1,5 +1,7 @@
-<LinkTo @route="hotel" @model={{@hotel.id}}>
-<div>
-    {{@hotel.name}}
+<LinkTo @route="hotel" @model={{@hotel.id}} class="text-decoration-none">
+<div class="card w-75 m-2">
+    <div class="card-body">
+        <h5 class="card-title">{{@hotel.name}}</h5>
+    </div>
 </div>
 </LinkTo>
