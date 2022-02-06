@@ -1,5 +1,6 @@
 {{page-title "Hotel"}}
 {{#each @model.items as |item|}}
-<Item @item={{item}} @id={{@model.id}} @name={{@model.name}}/>
+<Item @item={{item}} @id={{@model.id}} @name={{@model.name}} @add=true />
 {{/each}}
+<LinkTo @route="cart">Submit</LinkTo>
 {{outlet}}

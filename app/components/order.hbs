@@ -1,0 +1,5 @@
+<div>
+    {{#each @order.items as |item|}}
+    <Item @item={{item}} @id={{@model.id}} @name={{@model.name}} />
+    {{/each}}
+</div>

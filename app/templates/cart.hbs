@@ -1,0 +1,5 @@
+{{page-title "Cart"}}
+{{#each @model as |order|}}
+<Order @order={{order}} />
+{{/each}}
+{{outlet}}

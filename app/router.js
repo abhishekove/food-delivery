@@ -12,4 +12,5 @@ Router.map(function () {
   this.route('signup');
   this.route('hotel');
   this.route('hotel', { path: '/hotel/:id' });
+  this.route('cart');
 });

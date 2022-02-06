@@ -1,7 +1,9 @@
 <div>
     {{@item.name}}
     {{@item.cost}}
+    {{#if @add}}
     <div {{on 'click' this.click}}>
         add
     </div>
+    {{/if}}
 </div>
