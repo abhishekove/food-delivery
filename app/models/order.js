@@ -1,7 +1,7 @@
-import Model, { attr, hasMany } from '@ember-data/model';
+import Model, { attr } from '@ember-data/model';
 
 export default class OrderModel extends Model {
   @attr restoname;
-  @hasMany('item') items;
+  @attr items;
   @attr cost;
 }
